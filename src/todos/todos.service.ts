@@ -28,4 +28,8 @@ export class TodosService {
   findAll(): Todo[] {
     return this.todos;
   }
+  //création de la méthode create()
+  create(todo: Todo) {
+    this.todos = [...this.todos, todo];
+  }
 }
