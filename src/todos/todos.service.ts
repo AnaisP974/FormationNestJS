@@ -24,6 +24,11 @@ export class TodosService {
       done: true,
     },
   ];
+
+  //création de la méthode findOne()
+  findOne(id: string) {
+    return this.todos.find((todo) => todo.id === Number(id));
+  }
   //création d'une méthode findAll() qui retourne la liste des todos dans un array
   findAll(): Todo[] {
     return this.todos;
